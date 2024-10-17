@@ -1,2 +1,0 @@
-customization.js
-popup.js
