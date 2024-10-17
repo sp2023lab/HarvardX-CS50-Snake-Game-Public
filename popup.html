@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Game</title>
+    <link rel="stylesheet" href="css/popup.css"> <!-- Link to the stylesheet for styling -->
+</head>
+<body>
+    <div class="container">
+        <!-- Main container for the game -->
+        <h1>Snake Game</h1> <!-- Title of the game -->
+        <canvas id="gameCanvas" width="400" height="400"></canvas> <!-- Canvas element for rendering the game -->
+
+        <section class="score-panel">
+            <!-- Section for displaying scores -->
+            <p>Score: <span id="score">0</span></p> <!-- Current score display -->
+            <p>High Score: <span id="highScore">0</span></p> <!-- High score display -->
+        </section>
+
+        <button id="resetButton" aria-label="Reset the game">Reset</button> <!-- Button to reset the game -->
+        <br />
+        <button id="howToPlayButton" aria-label="View how to play">How to Play</button> <!-- Button to view tutorial -->
+        <button id="customizationButton">Customization</button> <!-- Button to view customization -->
+
+        <div id="tutorialBox" class="tutorial" aria-live="polite">
+            <!-- Tutorial box with live updates for screen readers -->
+            <p id="tutorialText">Welcome to Snake! Use the arrow keys to move the snake.</p> <!-- Tutorial text -->
+            <button id="prevButton" aria-label="Go to the previous tutorial step">Previous</button> <!-- Button to go back in tutorial -->
+            <button id="nextButton" aria-label="Go to the next tutorial step">Next</button> <!-- Button to advance in tutorial -->
+            <button id="startButton" style="display: none;" aria-label="Start the game">Start Game</button> <!-- Button to start the game, initially hidden -->
+            <button id="skipButton" aria-label="Skip the tutorial">Skip</button> <!-- Button to skip the tutorial -->
+        </div>
+    </div>
+
+    <script src="js/popup.js"></script> <!-- Link to the JavaScript file for game logic -->
+</body>
+</html>
